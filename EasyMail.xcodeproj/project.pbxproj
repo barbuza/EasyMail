@@ -1,0 +1,300 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B6E79370159D8F0B00075F34 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E7936F159D8F0B00075F34 /* Cocoa.framework */; };
+		B6E7937A159D8F0B00075F34 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6E79378159D8F0B00075F34 /* InfoPlist.strings */; };
+		B6E7937C159D8F0B00075F34 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E7937B159D8F0B00075F34 /* main.m */; };
+		B6E79380159D8F0B00075F34 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B6E7937E159D8F0B00075F34 /* Credits.rtf */; };
+		B6E79383159D8F0B00075F34 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E79382159D8F0B00075F34 /* AppDelegate.m */; };
+		B6E79386159D8F0B00075F34 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6E79384159D8F0B00075F34 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B6E7936B159D8F0B00075F34 /* EasyMail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyMail.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6E7936F159D8F0B00075F34 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		B6E79372159D8F0B00075F34 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		B6E79373159D8F0B00075F34 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B6E79374159D8F0B00075F34 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B6E79377159D8F0B00075F34 /* EasyMail-Info.plist */ = {isa = PBXFileReference; path = "EasyMail-Info.plist"; sourceTree = "<group>"; };
+		B6E79379159D8F0B00075F34 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B6E7937B159D8F0B00075F34 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B6E7937D159D8F0B00075F34 /* EasyMail-Prefix.pch */ = {isa = PBXFileReference; path = "EasyMail-Prefix.pch"; sourceTree = "<group>"; };
+		B6E7937F159D8F0B00075F34 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		B6E79381159D8F0B00075F34 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		B6E79382159D8F0B00075F34 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B6E79385159D8F0B00075F34 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B6E79368159D8F0B00075F34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6E79370159D8F0B00075F34 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B6E79360159D8F0B00075F34 = {
+			isa = PBXGroup;
+			children = (
+				B6E79375159D8F0B00075F34 /* EasyMail */,
+				B6E7936E159D8F0B00075F34 /* Frameworks */,
+				B6E7936C159D8F0B00075F34 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B6E7936C159D8F0B00075F34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6E7936B159D8F0B00075F34 /* EasyMail.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B6E7936E159D8F0B00075F34 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6E7936F159D8F0B00075F34 /* Cocoa.framework */,
+				B6E79371159D8F0B00075F34 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6E79371159D8F0B00075F34 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6E79372159D8F0B00075F34 /* AppKit.framework */,
+				B6E79373159D8F0B00075F34 /* CoreData.framework */,
+				B6E79374159D8F0B00075F34 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		B6E79375159D8F0B00075F34 /* EasyMail */ = {
+			isa = PBXGroup;
+			children = (
+				B6E79381159D8F0B00075F34 /* AppDelegate.h */,
+				B6E79382159D8F0B00075F34 /* AppDelegate.m */,
+				B6E79384159D8F0B00075F34 /* MainMenu.xib */,
+				B6E79376159D8F0B00075F34 /* Supporting Files */,
+			);
+			path = EasyMail;
+			sourceTree = "<group>";
+		};
+		B6E79376159D8F0B00075F34 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6E79377159D8F0B00075F34 /* EasyMail-Info.plist */,
+				B6E79378159D8F0B00075F34 /* InfoPlist.strings */,
+				B6E7937B159D8F0B00075F34 /* main.m */,
+				B6E7937D159D8F0B00075F34 /* EasyMail-Prefix.pch */,
+				B6E7937E159D8F0B00075F34 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B6E7936A159D8F0B00075F34 /* EasyMail */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6E79389159D8F0B00075F34 /* Build configuration list for PBXNativeTarget "EasyMail" */;
+			buildPhases = (
+				B6E79367159D8F0B00075F34 /* Sources */,
+				B6E79368159D8F0B00075F34 /* Frameworks */,
+				B6E79369159D8F0B00075F34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EasyMail;
+			productName = EasyMail;
+			productReference = B6E7936B159D8F0B00075F34 /* EasyMail.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B6E79362159D8F0B00075F34 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Viktor Kotseruba";
+			};
+			buildConfigurationList = B6E79365159D8F0B00075F34 /* Build configuration list for PBXProject "EasyMail" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B6E79360159D8F0B00075F34;
+			productRefGroup = B6E7936C159D8F0B00075F34 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B6E7936A159D8F0B00075F34 /* EasyMail */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B6E79369159D8F0B00075F34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6E7937A159D8F0B00075F34 /* InfoPlist.strings in Resources */,
+				B6E79380159D8F0B00075F34 /* Credits.rtf in Resources */,
+				B6E79386159D8F0B00075F34 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B6E79367159D8F0B00075F34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6E7937C159D8F0B00075F34 /* main.m in Sources */,
+				B6E79383159D8F0B00075F34 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B6E79378159D8F0B00075F34 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6E79379159D8F0B00075F34 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B6E7937E159D8F0B00075F34 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6E7937F159D8F0B00075F34 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		B6E79384159D8F0B00075F34 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6E79385159D8F0B00075F34 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B6E79387159D8F0B00075F34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B6E79388159D8F0B00075F34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B6E7938A159D8F0B00075F34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EasyMail/EasyMail-Prefix.pch";
+				INFOPLIST_FILE = "EasyMail/EasyMail-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B6E7938B159D8F0B00075F34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EasyMail/EasyMail-Prefix.pch";
+				INFOPLIST_FILE = "EasyMail/EasyMail-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B6E79365159D8F0B00075F34 /* Build configuration list for PBXProject "EasyMail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6E79387159D8F0B00075F34 /* Debug */,
+				B6E79388159D8F0B00075F34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6E79389159D8F0B00075F34 /* Build configuration list for PBXNativeTarget "EasyMail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6E7938A159D8F0B00075F34 /* Debug */,
+				B6E7938B159D8F0B00075F34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B6E79362159D8F0B00075F34 /* Project object */;
+}
