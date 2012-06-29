@@ -1,7 +1,9 @@
-//
-// Prefix header for all source files of the 'EasyMail' target in the 'EasyMail' project
-//
-
 #ifdef __OBJC__
-  #import <Cocoa/Cocoa.h>
+
+#import <Cocoa/Cocoa.h>
+#import <AddressBook/AddressBook.h>
+#import <Python/Python.h>
+#import <SBJson/SBJson.h>
+#import <Growl/Growl.h>
+
 #endif
