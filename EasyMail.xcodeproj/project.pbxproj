@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B65264A7159E20190015F1B8 /* Red.icns in Resources */ = {isa = PBXBuildFile; fileRef = B65264A6159E20190015F1B8 /* Red.icns */; };
 		B6540C9B159E0FFD007BF9DD /* ArchProgressIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = B6540C9A159E0FFC007BF9DD /* ArchProgressIndicator.m */; };
+		B6642B5D159EF2C40004B285 /* Red.icns in Resources */ = {isa = PBXBuildFile; fileRef = B65264A6159E20190015F1B8 /* Red.icns */; };
 		B6D020C3159E176F00995071 /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D020C2159E176F00995071 /* Growl.framework */; };
 		B6D020C5159E177400995071 /* Growl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B6D020C2159E176F00995071 /* Growl.framework */; };
 		B6E79370159D8F0B00075F34 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E7936F159D8F0B00075F34 /* Cocoa.framework */; };
@@ -30,10 +31,7 @@
 		B6E793C8159DD64600075F34 /* PreferencePanes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E793C7159DD64600075F34 /* PreferencePanes.framework */; };
 		B6E793CE159DD64700075F34 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6E793CC159DD64700075F34 /* InfoPlist.strings */; };
 		B6E793D2159DD64700075F34 /* EasyMailPrefs.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E793D1159DD64700075F34 /* EasyMailPrefs.m */; };
-		B6E793D4159DD64700075F34 /* EasyMailPrefs.tiff in Resources */ = {isa = PBXBuildFile; fileRef = B6E793D3159DD64700075F34 /* EasyMailPrefs.tiff */; };
 		B6E793D7159DD64700075F34 /* EasyMailPrefs.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6E793D5159DD64700075F34 /* EasyMailPrefs.xib */; };
-		B6E793DD159DD89700075F34 /* PrefPane.h in Headers */ = {isa = PBXBuildFile; fileRef = B6E793DB159DD89700075F34 /* PrefPane.h */; };
-		B6E793DE159DD89700075F34 /* PrefPane.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E793DC159DD89700075F34 /* PrefPane.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -87,10 +85,7 @@
 		B6E793CF159DD64700075F34 /* EasyMailPrefs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EasyMailPrefs-Prefix.pch"; sourceTree = "<group>"; };
 		B6E793D0159DD64700075F34 /* EasyMailPrefs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EasyMailPrefs.h; sourceTree = "<group>"; };
 		B6E793D1159DD64700075F34 /* EasyMailPrefs.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EasyMailPrefs.m; sourceTree = "<group>"; };
-		B6E793D3159DD64700075F34 /* EasyMailPrefs.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = EasyMailPrefs.tiff; sourceTree = "<group>"; };
 		B6E793D6159DD64700075F34 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/EasyMailPrefs.xib; sourceTree = "<group>"; };
-		B6E793DB159DD89700075F34 /* PrefPane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefPane.h; sourceTree = "<group>"; };
-		B6E793DC159DD89700075F34 /* PrefPane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrefPane.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,11 +204,8 @@
 			children = (
 				B6E793D0159DD64700075F34 /* EasyMailPrefs.h */,
 				B6E793D1159DD64700075F34 /* EasyMailPrefs.m */,
-				B6E793D3159DD64700075F34 /* EasyMailPrefs.tiff */,
 				B6E793D5159DD64700075F34 /* EasyMailPrefs.xib */,
 				B6E793CA159DD64700075F34 /* Supporting Files */,
-				B6E793DB159DD89700075F34 /* PrefPane.h */,
-				B6E793DC159DD89700075F34 /* PrefPane.m */,
 			);
 			path = EasyMailPrefs;
 			sourceTree = "<group>";
@@ -235,7 +227,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6E793DD159DD89700075F34 /* PrefPane.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,8 +315,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6E793CE159DD64700075F34 /* InfoPlist.strings in Resources */,
-				B6E793D4159DD64700075F34 /* EasyMailPrefs.tiff in Resources */,
 				B6E793D7159DD64700075F34 /* EasyMailPrefs.xib in Resources */,
+				B6642B5D159EF2C40004B285 /* Red.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,7 +352,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6E793D2159DD64700075F34 /* EasyMailPrefs.m in Sources */,
-				B6E793DE159DD89700075F34 /* PrefPane.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,7 +416,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
@@ -442,14 +432,14 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = macosx;
 			};
 			name = Release;

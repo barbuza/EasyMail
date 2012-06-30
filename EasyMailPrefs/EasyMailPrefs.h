@@ -7,12 +7,14 @@
 //
 
 #import <PreferencePanes/PreferencePanes.h>
-#import "PrefPane.h"
 
 @interface EasyMailPrefs : NSPreferencePane
 
-@property (assign) IBOutlet PrefPane *prefPane;
+@property (assign) IBOutlet NSTextField *usernameInput;
+@property (assign) IBOutlet NSSecureTextField *passwordInput;
+@property (assign) IBOutlet NSTextField *textInput;
 
 - (void)mainViewDidLoad;
+- (IBAction)doSave:(id)sender;
 
 @end
