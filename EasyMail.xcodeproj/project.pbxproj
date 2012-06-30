@@ -9,29 +9,23 @@
 /* Begin PBXBuildFile section */
 		B65264A7159E20190015F1B8 /* Red.icns in Resources */ = {isa = PBXBuildFile; fileRef = B65264A6159E20190015F1B8 /* Red.icns */; };
 		B6540C9B159E0FFD007BF9DD /* ArchProgressIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = B6540C9A159E0FFC007BF9DD /* ArchProgressIndicator.m */; };
-		B6642B5D159EF2C40004B285 /* Red.icns in Resources */ = {isa = PBXBuildFile; fileRef = B65264A6159E20190015F1B8 /* Red.icns */; };
+		B6A336DD159F09FA0055CA70 /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A336DC159F09FA0055CA70 /* Config.m */; };
+		B6A336E0159F1DDE0055CA70 /* PreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A336DF159F1DDE0055CA70 /* PreferencesController.m */; };
+		B6A336E2159F1DEA0055CA70 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6A336E1159F1DEA0055CA70 /* Preferences.xib */; };
 		B6D020C3159E176F00995071 /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D020C2159E176F00995071 /* Growl.framework */; };
 		B6D020C5159E177400995071 /* Growl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B6D020C2159E176F00995071 /* Growl.framework */; };
 		B6E79370159D8F0B00075F34 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E7936F159D8F0B00075F34 /* Cocoa.framework */; };
 		B6E7937A159D8F0B00075F34 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6E79378159D8F0B00075F34 /* InfoPlist.strings */; };
 		B6E7937C159D8F0B00075F34 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E7937B159D8F0B00075F34 /* main.m */; };
-		B6E79380159D8F0B00075F34 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B6E7937E159D8F0B00075F34 /* Credits.rtf */; };
 		B6E79383159D8F0B00075F34 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E79382159D8F0B00075F34 /* AppDelegate.m */; };
 		B6E7938E159D906E00075F34 /* FilesDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E7938D159D906E00075F34 /* FilesDataSource.m */; };
-		B6E79394159D91D800075F34 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6E79393159D91D800075F34 /* MainMenu.xib */; };
+		B6E79394159D91D800075F34 /* App.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6E79393159D91D800075F34 /* App.xib */; };
 		B6E7939A159D921800075F34 /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E79399159D921800075F34 /* MainView.m */; };
 		B6E7939C159DA77500075F34 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E7939B159DA77400075F34 /* AddressBook.framework */; };
 		B6E7939F159DADDD00075F34 /* SendToDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E7939E159DADDD00075F34 /* SendToDelegate.m */; };
 		B6E793AF159DC4A900075F34 /* Python.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E793AE159DC4A900075F34 /* Python.framework */; };
 		B6E793B1159DC53900075F34 /* mail.py in Resources */ = {isa = PBXBuildFile; fileRef = B6E793B0159DC53800075F34 /* mail.py */; };
-		B6E793B7159DC8A500075F34 /* SBJson.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E793B6159DC8A500075F34 /* SBJson.framework */; };
-		B6E793B9159DC8AB00075F34 /* SBJson.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B6E793B6159DC8A500075F34 /* SBJson.framework */; };
 		B6E793BE159DCC9F00075F34 /* PythonMail.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E793BD159DCC9F00075F34 /* PythonMail.m */; };
-		B6E793C6159DD64600075F34 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E7936F159D8F0B00075F34 /* Cocoa.framework */; };
-		B6E793C8159DD64600075F34 /* PreferencePanes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E793C7159DD64600075F34 /* PreferencePanes.framework */; };
-		B6E793CE159DD64700075F34 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6E793CC159DD64700075F34 /* InfoPlist.strings */; };
-		B6E793D2159DD64700075F34 /* EasyMailPrefs.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E793D1159DD64700075F34 /* EasyMailPrefs.m */; };
-		B6E793D7159DD64700075F34 /* EasyMailPrefs.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6E793D5159DD64700075F34 /* EasyMailPrefs.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,7 +35,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B6E793B9159DC8AB00075F34 /* SBJson.framework in CopyFiles */,
 				B6D020C5159E177400995071 /* Growl.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -52,6 +45,12 @@
 		B65264A6159E20190015F1B8 /* Red.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Red.icns; sourceTree = "<group>"; };
 		B6540C99159E0FFC007BF9DD /* ArchProgressIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArchProgressIndicator.h; sourceTree = "<group>"; };
 		B6540C9A159E0FFC007BF9DD /* ArchProgressIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArchProgressIndicator.m; sourceTree = "<group>"; };
+		B6A336DB159F09FA0055CA70 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		B6A336DC159F09FA0055CA70 /* Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Config.m; sourceTree = "<group>"; };
+		B6A336DE159F1DDE0055CA70 /* PreferencesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesController.h; sourceTree = "<group>"; };
+		B6A336DF159F1DDE0055CA70 /* PreferencesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesController.m; sourceTree = "<group>"; };
+		B6A336E1159F1DEA0055CA70 /* Preferences.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
+		B6A9E578159EFAA600B8D612 /* libsbjson-static.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libsbjson-static.a"; sourceTree = SOURCE_ROOT; };
 		B6D020C2159E176F00995071 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Growl.framework; sourceTree = "<group>"; };
 		B6E7936B159D8F0B00075F34 /* EasyMail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyMail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E7936F159D8F0B00075F34 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -62,12 +61,11 @@
 		B6E79379159D8F0B00075F34 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B6E7937B159D8F0B00075F34 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B6E7937D159D8F0B00075F34 /* EasyMail-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EasyMail-Prefix.pch"; sourceTree = "<group>"; };
-		B6E7937F159D8F0B00075F34 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		B6E79381159D8F0B00075F34 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B6E79382159D8F0B00075F34 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B6E7938C159D906E00075F34 /* FilesDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilesDataSource.h; sourceTree = "<group>"; };
 		B6E7938D159D906E00075F34 /* FilesDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilesDataSource.m; sourceTree = "<group>"; };
-		B6E79393159D91D800075F34 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		B6E79393159D91D800075F34 /* App.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = App.xib; sourceTree = "<group>"; };
 		B6E79398159D921800075F34 /* MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainView.h; sourceTree = "<group>"; };
 		B6E79399159D921800075F34 /* MainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainView.m; sourceTree = "<group>"; };
 		B6E7939B159DA77400075F34 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
@@ -78,14 +76,7 @@
 		B6E793B6159DC8A500075F34 /* SBJson.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SBJson.framework; sourceTree = "<group>"; };
 		B6E793BC159DCC9F00075F34 /* PythonMail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PythonMail.h; sourceTree = "<group>"; };
 		B6E793BD159DCC9F00075F34 /* PythonMail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PythonMail.m; sourceTree = "<group>"; };
-		B6E793C5159DD64600075F34 /* EasyMailPrefs.prefPane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyMailPrefs.prefPane; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E793C7159DD64600075F34 /* PreferencePanes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PreferencePanes.framework; path = System/Library/Frameworks/PreferencePanes.framework; sourceTree = SDKROOT; };
-		B6E793CB159DD64700075F34 /* EasyMailPrefs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EasyMailPrefs-Info.plist"; sourceTree = "<group>"; };
-		B6E793CD159DD64700075F34 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B6E793CF159DD64700075F34 /* EasyMailPrefs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EasyMailPrefs-Prefix.pch"; sourceTree = "<group>"; };
-		B6E793D0159DD64700075F34 /* EasyMailPrefs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EasyMailPrefs.h; sourceTree = "<group>"; };
-		B6E793D1159DD64700075F34 /* EasyMailPrefs.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EasyMailPrefs.m; sourceTree = "<group>"; };
-		B6E793D6159DD64700075F34 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/EasyMailPrefs.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,28 +87,43 @@
 				B6E793AF159DC4A900075F34 /* Python.framework in Frameworks */,
 				B6E7939C159DA77500075F34 /* AddressBook.framework in Frameworks */,
 				B6E79370159D8F0B00075F34 /* Cocoa.framework in Frameworks */,
-				B6E793B7159DC8A500075F34 /* SBJson.framework in Frameworks */,
 				B6D020C3159E176F00995071 /* Growl.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B6E793C0159DD64600075F34 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B6E793C6159DD64600075F34 /* Cocoa.framework in Frameworks */,
-				B6E793C8159DD64600075F34 /* PreferencePanes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B6E6D86A159EFEF10089EE23 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				B6A336E1159F1DEA0055CA70 /* Preferences.xib */,
+				B6E79393159D91D800075F34 /* App.xib */,
+			);
+			name = Interface;
+			sourceTree = "<group>";
+		};
+		B6E6D86C159EFF040089EE23 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				B6A9E578159EFAA600B8D612 /* libsbjson-static.a */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		B6E6D86D159EFF0E0089EE23 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B6E793B0159DC53800075F34 /* mail.py */,
+				B65264A6159E20190015F1B8 /* Red.icns */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		B6E79360159D8F0B00075F34 = {
 			isa = PBXGroup;
 			children = (
 				B6E79375159D8F0B00075F34 /* EasyMail */,
-				B6E793C9159DD64600075F34 /* EasyMailPrefs */,
 				B6E7936E159D8F0B00075F34 /* Frameworks */,
 				B6E7936C159D8F0B00075F34 /* Products */,
 			);
@@ -127,7 +133,6 @@
 			isa = PBXGroup;
 			children = (
 				B6E7936B159D8F0B00075F34 /* EasyMail.app */,
-				B6E793C5159DD64600075F34 /* EasyMailPrefs.prefPane */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -159,11 +164,11 @@
 		B6E79375159D8F0B00075F34 /* EasyMail */ = {
 			isa = PBXGroup;
 			children = (
-				B6E79393159D91D800075F34 /* MainMenu.xib */,
-				B65264A6159E20190015F1B8 /* Red.icns */,
+				B6E6D86D159EFF0E0089EE23 /* Resources */,
+				B6E6D86C159EFF040089EE23 /* Libraries */,
+				B6E6D86A159EFEF10089EE23 /* Interface */,
 				B6E7938F159D907300075F34 /* Classes */,
 				B6E79376159D8F0B00075F34 /* Supporting Files */,
-				B6E793B0159DC53800075F34 /* mail.py */,
 			);
 			path = EasyMail;
 			sourceTree = "<group>";
@@ -175,7 +180,6 @@
 				B6E79378159D8F0B00075F34 /* InfoPlist.strings */,
 				B6E7937B159D8F0B00075F34 /* main.m */,
 				B6E7937D159D8F0B00075F34 /* EasyMail-Prefix.pch */,
-				B6E7937E159D8F0B00075F34 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -183,6 +187,8 @@
 		B6E7938F159D907300075F34 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				B6A336DE159F1DDE0055CA70 /* PreferencesController.h */,
+				B6A336DF159F1DDE0055CA70 /* PreferencesController.m */,
 				B6E7938C159D906E00075F34 /* FilesDataSource.h */,
 				B6E7938D159D906E00075F34 /* FilesDataSource.m */,
 				B6E79381159D8F0B00075F34 /* AppDelegate.h */,
@@ -195,42 +201,13 @@
 				B6E793BD159DCC9F00075F34 /* PythonMail.m */,
 				B6540C99159E0FFC007BF9DD /* ArchProgressIndicator.h */,
 				B6540C9A159E0FFC007BF9DD /* ArchProgressIndicator.m */,
+				B6A336DB159F09FA0055CA70 /* Config.h */,
+				B6A336DC159F09FA0055CA70 /* Config.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
 		};
-		B6E793C9159DD64600075F34 /* EasyMailPrefs */ = {
-			isa = PBXGroup;
-			children = (
-				B6E793D0159DD64700075F34 /* EasyMailPrefs.h */,
-				B6E793D1159DD64700075F34 /* EasyMailPrefs.m */,
-				B6E793D5159DD64700075F34 /* EasyMailPrefs.xib */,
-				B6E793CA159DD64700075F34 /* Supporting Files */,
-			);
-			path = EasyMailPrefs;
-			sourceTree = "<group>";
-		};
-		B6E793CA159DD64700075F34 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				B6E793CB159DD64700075F34 /* EasyMailPrefs-Info.plist */,
-				B6E793CC159DD64700075F34 /* InfoPlist.strings */,
-				B6E793CF159DD64700075F34 /* EasyMailPrefs-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		B6E793C1159DD64600075F34 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		B6E7936A159D8F0B00075F34 /* EasyMail */ = {
@@ -250,25 +227,6 @@
 			productName = EasyMail;
 			productReference = B6E7936B159D8F0B00075F34 /* EasyMail.app */;
 			productType = "com.apple.product-type.application";
-		};
-		B6E793C4159DD64600075F34 /* EasyMailPrefs */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B6E793D8159DD64700075F34 /* Build configuration list for PBXNativeTarget "EasyMailPrefs" */;
-			buildPhases = (
-				B6E793BF159DD64600075F34 /* Sources */,
-				B6E793C0159DD64600075F34 /* Frameworks */,
-				B6E793C1159DD64600075F34 /* Headers */,
-				B6E793C2159DD64600075F34 /* Resources */,
-				B6E793C3159DD64600075F34 /* Rez */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = EasyMailPrefs;
-			productName = EasyMailPrefs;
-			productReference = B6E793C5159DD64600075F34 /* EasyMailPrefs.prefPane */;
-			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -292,7 +250,6 @@
 			projectRoot = "";
 			targets = (
 				B6E7936A159D8F0B00075F34 /* EasyMail */,
-				B6E793C4159DD64600075F34 /* EasyMailPrefs */,
 			);
 		};
 /* End PBXProject section */
@@ -303,34 +260,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6E7937A159D8F0B00075F34 /* InfoPlist.strings in Resources */,
-				B6E79380159D8F0B00075F34 /* Credits.rtf in Resources */,
-				B6E79394159D91D800075F34 /* MainMenu.xib in Resources */,
+				B6E79394159D91D800075F34 /* App.xib in Resources */,
 				B6E793B1159DC53900075F34 /* mail.py in Resources */,
 				B65264A7159E20190015F1B8 /* Red.icns in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B6E793C2159DD64600075F34 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B6E793CE159DD64700075F34 /* InfoPlist.strings in Resources */,
-				B6E793D7159DD64700075F34 /* EasyMailPrefs.xib in Resources */,
-				B6642B5D159EF2C40004B285 /* Red.icns in Resources */,
+				B6A336E2159F1DEA0055CA70 /* Preferences.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXRezBuildPhase section */
-		B6E793C3159DD64600075F34 /* Rez */ = {
-			isa = PBXRezBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXRezBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B6E79367159D8F0B00075F34 /* Sources */ = {
@@ -344,14 +281,8 @@
 				B6E7939F159DADDD00075F34 /* SendToDelegate.m in Sources */,
 				B6E793BE159DCC9F00075F34 /* PythonMail.m in Sources */,
 				B6540C9B159E0FFD007BF9DD /* ArchProgressIndicator.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B6E793BF159DD64600075F34 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B6E793D2159DD64700075F34 /* EasyMailPrefs.m in Sources */,
+				B6A336DD159F09FA0055CA70 /* Config.m in Sources */,
+				B6A336E0159F1DDE0055CA70 /* PreferencesController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,30 +295,6 @@
 				B6E79379159D8F0B00075F34 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		B6E7937E159D8F0B00075F34 /* Credits.rtf */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B6E7937F159D8F0B00075F34 /* en */,
-			);
-			name = Credits.rtf;
-			sourceTree = "<group>";
-		};
-		B6E793CC159DD64700075F34 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B6E793CD159DD64700075F34 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		B6E793D5159DD64700075F34 /* EasyMailPrefs.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B6E793D6159DD64700075F34 /* en */,
-			);
-			name = EasyMailPrefs.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -417,8 +324,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = macosx10.7;
 			};
 			name = Debug;
 		};
@@ -440,7 +347,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				SDKROOT = macosx;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = macosx10.7;
 			};
 			name = Release;
 		};
@@ -454,6 +362,15 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EasyMail/EasyMail-Prefix.pch";
 				INFOPLIST_FILE = "EasyMail/EasyMail-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-lsbjson-static",
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -469,34 +386,17 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EasyMail/EasyMail-Prefix.pch";
 				INFOPLIST_FILE = "EasyMail/EasyMail-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-lsbjson-static",
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		B6E793D9159DD64700075F34 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_ENABLE_OBJC_GC = "";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "EasyMailPrefs/EasyMailPrefs-Prefix.pch";
-				INFOPLIST_FILE = "EasyMailPrefs/EasyMailPrefs-Info.plist";
-				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = prefPane;
-			};
-			name = Debug;
-		};
-		B6E793DA159DD64700075F34 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_ENABLE_OBJC_GC = "";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "EasyMailPrefs/EasyMailPrefs-Prefix.pch";
-				INFOPLIST_FILE = "EasyMailPrefs/EasyMailPrefs-Info.plist";
-				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = prefPane;
 			};
 			name = Release;
 		};
@@ -517,15 +417,6 @@
 			buildConfigurations = (
 				B6E7938A159D8F0B00075F34 /* Debug */,
 				B6E7938B159D8F0B00075F34 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B6E793D8159DD64700075F34 /* Build configuration list for PBXNativeTarget "EasyMailPrefs" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B6E793D9159DD64700075F34 /* Debug */,
-				B6E793DA159DD64700075F34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

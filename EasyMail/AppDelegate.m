@@ -8,17 +8,6 @@
 
 #import "AppDelegate.h"
 
-static NSString *configPath() {
-  NSString *configDir = [[NSSearchPathForDirectoriesInDomains(NSApplicationSupportDirectory, NSUserDomainMask, YES) objectAtIndex:0] stringByAppendingPathComponent:@"EasyMail"];
-  NSFileManager *fileManaged = [NSFileManager defaultManager];
-  [fileManaged createDirectoryAtPath:configDir withIntermediateDirectories:YES attributes:nil error:nil];
-  return [configDir stringByAppendingPathComponent:@"config.plist"];
-};
-
-static NSMutableDictionary *loadConfig() {
-  return [NSMutableDictionary dictionaryWithContentsOfFile:configPath()];
-};
-
 @implementation AppDelegate {
   BOOL sending;
 }
@@ -31,7 +20,6 @@ static NSMutableDictionary *loadConfig() {
 @synthesize filesDataSource;
 @synthesize sendButton;
 @synthesize progressIndicator;
-@synthesize sendMenuItem;
 
 - (NSDictionary *)registrationDictionaryForGrowl {
   return @{GROWL_NOTIFICATIONS_ALL : @[@"sending", @"sent"], GROWL_NOTIFICATIONS_DEFAULT : @[@"sending", @"sent"]};
@@ -39,22 +27,22 @@ static NSMutableDictionary *loadConfig() {
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
   [GrowlApplicationBridge setGrowlDelegate:self];
-  config = loadConfig();
-  if ([config objectForKey:@"email"] == nil || [config objectForKey:@"password"] == nil) {
-    [[NSAlert alertWithMessageText:@"EasyMail is not configured"
-                     defaultButton:nil
-                   alternateButton:nil
-                       otherButton:nil
-         informativeTextWithFormat:@""] runModal];
-    exit(1);
+  
+  if (! [Config hasNonEmptyObjectsFor:@[@"email", @"password", @"text"]]) {
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    dispatch_async(queue, ^{
+      [self showPreferences:nil];
+    });
   }
-  NSArray *recipients = [config objectForKey:@"recipients"];
-  if ([recipients count]) {
-    [sendToField setObjectValue:recipients];
+  
+  if ([Config hasNonEmptyObjectFor:@"recipients"]) {
+    [sendToField setObjectValue:[Config objectFor:@"recipients"]];
     [subjectField becomeFirstResponder];
   }
-  NSString *subject = [config objectForKey:@"subject"];
-  if (subject != nil) [subjectField setStringValue:subject];
+  
+  if ([Config hasNonEmptyObjectFor:@"subject"]) {
+    [subjectField setStringValue:[Config objectFor:@"subject"]];
+  }
 }
 
 - (void)application:(NSApplication *)sender openFiles:(NSArray *)filenames {
@@ -68,23 +56,25 @@ static NSMutableDictionary *loadConfig() {
   if (sending) return;
   if (! [[filesDataSource files] count]) return;
   if (! [[sendToField objectValue] count]) return;
+  if (! [[subjectField stringValue] length]) return;
   
   sending = YES;
   
   [sendToField setEnabled:NO];
   [subjectField setEnabled:NO];
   [sendButton setEnabled:NO];
-  [sendMenuItem setEnabled:NO];
   [progressIndicator startAnimation:sender];
-
+  
   NSMutableArray *emails = [NSMutableArray array];
   [[sendToField objectValue] enumerateObjectsUsingBlock:^(NSDictionary *recipient, NSUInteger idx, BOOL *stop) {
     [emails addObject:[recipient objectForKey:@"email"]];
   }];
   NSArray *recipients = [NSArray arrayWithArray:[sendToField objectValue]];
   
-  NSString *text = [config objectForKey:@"text"];
-  if (text == nil) text = @"EasyMail delivery";
+  NSString *text = [Config objectFor:@"text"];
+  if (text == nil) {
+    text = @"EasyMail delivery";
+  }
   
   
   NSArray *files = [filesDataSource files];
@@ -93,6 +83,10 @@ static NSMutableDictionary *loadConfig() {
   NSString *filesCountString = (filesCount == 1) ? @"file" : @"files";
   NSString *personsCountString = (emailsCount == 1) ? @"person" : @"persons";
   NSString *subject = [subjectField stringValue];
+  
+  [Config setObject:recipients forKey:@"recipients"];
+  [Config setObject:subject forKey:@"subject"];
+  [Config saveConfig];
   
   NSString *notificationText = [NSString stringWithFormat:@"sending %li %@ to %li %@", filesCount, filesCountString, emailsCount, personsCountString];
   [GrowlApplicationBridge notifyWithTitle:@"EasyMail"
@@ -106,15 +100,13 @@ static NSMutableDictionary *loadConfig() {
   
   dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
   dispatch_async(queue, ^{
-    int failure = [PythonMail sendMessageFrom:[config objectForKey:@"email"]
-                                     password:[config objectForKey:@"password"]
+    
+    int failure = [PythonMail sendMessageFrom:[Config objectFor:@"email"]
+                                     password:[Config objectFor:@"password"]
                                       subject:subject
                                          text:text
                                    recipients:emails
                                   attachments:files];
-    [config setObject:recipients forKey:@"recipients"];
-    [config setObject:subject forKey:@"subject"];
-    [config writeToFile:configPath() atomically:YES];
     
     if (! failure) {
       [GrowlApplicationBridge notifyWithTitle:@"EasyMail"
@@ -125,15 +117,24 @@ static NSMutableDictionary *loadConfig() {
                                      isSticky:NO
                                  clickContext:nil];
     }
+    
     [progressIndicator stopAnimation:nil];
+    
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, NSEC_PER_SEC), queue, ^(void){
       [app terminate:nil];
     });
+    
   });
 }
 
 - (void)windowWillClose:(NSNotification *)notification {
   [app terminate:self];
+}
+
+- (void)showPreferences:(id)sender {
+  NSLog(@"show preferences");
+  PreferencesController *controller = [[PreferencesController alloc] initWithWindowNibName:@"Preferences"];
+  [controller showPreferences:nil];
 }
 
 @end
