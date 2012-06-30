@@ -216,7 +216,7 @@
 											<string key="NSFrameSize">{688, 295}</string>
 											<reference key="NSSuperview" ref="893779352"/>
 											<reference key="NSWindow"/>
-											<reference key="NSNextKeyView" ref="944545949"/>
+											<reference key="NSNextKeyView" ref="572428169"/>
 											<string key="NSReuseIdentifierKey">_NS:13</string>
 											<bool key="NSEnabled">YES</bool>
 											<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
@@ -365,7 +365,7 @@
 							<string key="NSFrame">{{20, 58}, {690, 313}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView" ref="572428169"/>
+							<reference key="NSNextKeyView" ref="893779352"/>
 							<string key="NSReuseIdentifierKey">_NS:9</string>
 							<int key="NSsFlags">133682</int>
 							<reference key="NSVScroller" ref="944545949"/>
@@ -589,6 +589,14 @@
 					<int key="connectionID">616</int>
 				</object>
 				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">doSend:</string>
+						<reference key="source" ref="976324537"/>
+						<reference key="destination" ref="528758581"/>
+					</object>
+					<int key="connectionID">617</int>
+				</object>
+				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
 						<string key="label">dataSource</string>
 						<reference key="source" ref="310697551"/>
@@ -611,14 +619,6 @@
 						<reference key="destination" ref="545511202"/>
 					</object>
 					<int key="connectionID">601</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">startAnimation:</string>
-						<reference key="source" ref="664431052"/>
-						<reference key="destination" ref="528758581"/>
-					</object>
-					<int key="connectionID">614</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -887,7 +887,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">616</int>
+			<int key="maxID">617</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
