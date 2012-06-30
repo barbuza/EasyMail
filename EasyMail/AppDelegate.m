@@ -48,10 +48,7 @@ static NSMutableDictionary *loadConfig() {
          informativeTextWithFormat:@""] runModal];
     exit(1);
   }
-  NSMutableArray *recipients = [NSMutableArray array];
-  [[config objectForKey:@"recipients"] enumerateObjectsUsingBlock:^(NSDictionary *recipientDict, NSUInteger idx, BOOL *stop) {
-    [recipients addObject:[PersonEmailPair pairForName:[recipientDict objectForKey:@"name"] email:[recipientDict objectForKey:@"email"]]];
-  }];
+  NSArray *recipients = [config objectForKey:@"recipients"];
   if ([recipients count]) {
     [sendToField setObjectValue:recipients];
     [subjectField becomeFirstResponder];
@@ -81,11 +78,10 @@ static NSMutableDictionary *loadConfig() {
   [progressIndicator startAnimation:sender];
 
   NSMutableArray *emails = [NSMutableArray array];
-  NSMutableArray *recipients = [NSMutableArray array];
-  [[sendToField objectValue] enumerateObjectsUsingBlock:^(PersonEmailPair *pair, NSUInteger idx, BOOL *stop) {
-    [emails addObject:pair.email];
-    [recipients addObject:@{@"name" : pair.name, @"email" : pair.email}];
+  [[sendToField objectValue] enumerateObjectsUsingBlock:^(NSDictionary *recipient, NSUInteger idx, BOOL *stop) {
+    [emails addObject:[recipient objectForKey:@"email"]];
   }];
+  NSArray *recipients = [NSArray arrayWithArray:[sendToField objectValue]];
   
   NSString *text = [config objectForKey:@"text"];
   if (text == nil) text = @"EasyMail delivery";

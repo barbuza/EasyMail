@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "PersonEmailPair.h"
 
 @interface SendToDelegate : NSObject <NSTokenFieldDelegate>
 

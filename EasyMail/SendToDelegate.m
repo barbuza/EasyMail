@@ -47,21 +47,20 @@ representedObjectForEditingString:(NSString *)editingString
                                                          value:editingString
                                                     comparison:kABEqualCaseInsensitive];
   NSArray *people = [book recordsMatchingSearchElement:search];
+  NSString *name = editingString;
   if ([people count]) {
     ABPerson *person = [people objectAtIndex:0];
     NSString *firstName = [person valueForProperty:kABFirstNameProperty];
     NSString *lastName = [person valueForProperty:kABLastNameProperty];
-    NSString *fullName = [NSString stringWithFormat:@"%@ %@", firstName, lastName];
-    return [PersonEmailPair pairForName:fullName email:editingString];
+    name = [NSString stringWithFormat:@"%@ %@", firstName, lastName];
   }
-  return [PersonEmailPair pairForName:editingString email:editingString];
+  return @{@"email" : editingString, @"name": name};
 }
 
 - (NSString *)tokenField:(NSTokenField *)tokenField
 displayStringForRepresentedObject:(id)representedObject
 {
-  PersonEmailPair *pair = representedObject;
-  return [pair name];
+  return [representedObject objectForKey:@"name"];
 }
 
 @end

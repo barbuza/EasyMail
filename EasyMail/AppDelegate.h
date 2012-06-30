@@ -9,7 +9,6 @@
 #import <Cocoa/Cocoa.h>
 #import "PythonMail.h"
 #import "FilesDataSource.h"
-#import "PersonEmailPair.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate, NSWindowDelegate, GrowlApplicationBridgeDelegate> {
   NSMutableDictionary *config;

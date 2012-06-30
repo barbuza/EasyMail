@@ -21,7 +21,6 @@
 		B6E7939A159D921800075F34 /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E79399159D921800075F34 /* MainView.m */; };
 		B6E7939C159DA77500075F34 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E7939B159DA77400075F34 /* AddressBook.framework */; };
 		B6E7939F159DADDD00075F34 /* SendToDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E7939E159DADDD00075F34 /* SendToDelegate.m */; };
-		B6E793A2159DB4D800075F34 /* PersonEmailPair.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E793A1159DB4D800075F34 /* PersonEmailPair.m */; };
 		B6E793AF159DC4A900075F34 /* Python.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E793AE159DC4A900075F34 /* Python.framework */; };
 		B6E793B1159DC53900075F34 /* mail.py in Resources */ = {isa = PBXBuildFile; fileRef = B6E793B0159DC53800075F34 /* mail.py */; };
 		B6E793B7159DC8A500075F34 /* SBJson.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E793B6159DC8A500075F34 /* SBJson.framework */; };
@@ -76,8 +75,6 @@
 		B6E7939B159DA77400075F34 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		B6E7939D159DADDD00075F34 /* SendToDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendToDelegate.h; sourceTree = "<group>"; };
 		B6E7939E159DADDD00075F34 /* SendToDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendToDelegate.m; sourceTree = "<group>"; };
-		B6E793A0159DB4D800075F34 /* PersonEmailPair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonEmailPair.h; sourceTree = "<group>"; };
-		B6E793A1159DB4D800075F34 /* PersonEmailPair.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonEmailPair.m; sourceTree = "<group>"; };
 		B6E793AE159DC4A900075F34 /* Python.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Python.framework; path = System/Library/Frameworks/Python.framework; sourceTree = SDKROOT; };
 		B6E793B0159DC53800075F34 /* mail.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = mail.py; sourceTree = "<group>"; };
 		B6E793B6159DC8A500075F34 /* SBJson.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SBJson.framework; sourceTree = "<group>"; };
@@ -199,8 +196,6 @@
 				B6E79399159D921800075F34 /* MainView.m */,
 				B6E7939D159DADDD00075F34 /* SendToDelegate.h */,
 				B6E7939E159DADDD00075F34 /* SendToDelegate.m */,
-				B6E793A0159DB4D800075F34 /* PersonEmailPair.h */,
-				B6E793A1159DB4D800075F34 /* PersonEmailPair.m */,
 				B6E793BC159DCC9F00075F34 /* PythonMail.h */,
 				B6E793BD159DCC9F00075F34 /* PythonMail.m */,
 				B6540C99159E0FFC007BF9DD /* ArchProgressIndicator.h */,
@@ -356,7 +351,6 @@
 				B6E7938E159D906E00075F34 /* FilesDataSource.m in Sources */,
 				B6E7939A159D921800075F34 /* MainView.m in Sources */,
 				B6E7939F159DADDD00075F34 /* SendToDelegate.m in Sources */,
-				B6E793A2159DB4D800075F34 /* PersonEmailPair.m in Sources */,
 				B6E793BE159DCC9F00075F34 /* PythonMail.m in Sources */,
 				B6540C9B159E0FFD007BF9DD /* ArchProgressIndicator.m in Sources */,
 			);

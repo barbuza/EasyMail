@@ -17,7 +17,7 @@
             recipients:(NSArray *)recipients
            attachments:(NSArray *)attachments
 {
-  id jsonData = @[account, password, recipients, subject, text, attachments];
+  NSArray *jsonData = @[account, password, recipients, subject, text, attachments];
   NSURL *codePath = [[NSURL URLWithString:[[NSBundle mainBundle] resourcePath]] URLByAppendingPathComponent:@"mail.py"];
   NSString *pythonCode = [NSString stringWithContentsOfFile:[codePath absoluteString] encoding:NSUTF8StringEncoding error:nil];
   pythonCode = [pythonCode stringByReplacingOccurrencesOfString:@"OBJC_MESSAGE" withString:[jsonData JSONRepresentation]];

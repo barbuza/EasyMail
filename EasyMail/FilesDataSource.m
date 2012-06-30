@@ -22,8 +22,8 @@
 - (void)addFile:(NSString *)path {
   NSFileManager *fileManager = [NSFileManager defaultManager];
   BOOL isDir;
-  if ([fileManager fileExistsAtPath:path isDirectory:&isDir]) {
-    if (! isDir) [files addObject:path];
+  if ([fileManager fileExistsAtPath:path isDirectory:&isDir] && !isDir) {
+    [files addObject:path];
   };
 }
 
